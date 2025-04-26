@@ -1,67 +1,67 @@
-package mindustry.content;
+包心智产业。内容；
 
-import arc.graphics.*;
-import arc.math.*;
-import arc.struct.*;
-import mindustry.*;
-import mindustry.entities.*;
-import mindustry.entities.abilities.*;
-import mindustry.entities.bullet.*;
-import mindustry.entities.effect.*;
-import mindustry.entities.part.DrawPart.*;
-import mindustry.entities.part.*;
-import mindustry.entities.pattern.*;
-import mindustry.gen.*;
-import mindustry.graphics.*;
-import mindustry.type.*;
-import mindustry.type.unit.*;
-import mindustry.world.*;
-import mindustry.world.blocks.*;
-import mindustry.world.blocks.campaign.*;
-import mindustry.world.blocks.defense.*;
-import mindustry.world.blocks.defense.turrets.*;
-import mindustry.world.blocks.distribution.*;
-import mindustry.world.blocks.environment.*;
-import mindustry.world.blocks.heat.*;
-import mindustry.world.blocks.legacy.*;
-import mindustry.world.blocks.liquid.*;
-import mindustry.world.blocks.logic.*;
-import mindustry.world.blocks.payloads.*;
-import mindustry.world.blocks.power.*;
-import mindustry.world.blocks.production.*;
-import mindustry.world.blocks.sandbox.*;
-import mindustry.world.blocks.storage.*;
-import mindustry.world.blocks.units.*;
-import mindustry.world.consumers.*;
-import mindustry.world.draw.*;
-import mindustry.world.meta.*;
+进口arc.graphics.*；
+进口arc.math.*；
+进口arc.struct.*；
+进口脑力劳动。*；
+进口mindustry.ities.*；
+进口mindustry.ities.abilities*；
+进口mindustry.ities.bullet.*；
+进口思想工业.实体.效果.*；
+进口mindustry.ities.part.DrawPart.*；
+进口mindustry.ities.part.*；
+进口mindustry.ities.pattern.*；
+进口mindustry.gen.*；
+进口mindustry.graphics。*；
+进口mindustry.type.*；
+进口mindustry.type.unit.*；
+进口mindustry.world.*；
+进口mindustry.world.blocks.*；
+进口mindustry.world.blocks.campaign.*；
+进口mindustry.world.blocks.Defense*；
+进口mindustry.world.blocks.Defense.turrets.*；
+进口mindustry.world.blocks.distribution.*；
+进口mindustry.world.blocks.Environment.*；
+进口mindustry.world.blocks.heat.*；
+进口mindustry.world.blocks.legacy.*；
+进口mindustry.world.blocks.Liquid.*；
+进口mindustry.world.blocks.logic.*；
+进口mindustry.world.blocks.payloads.*；
+进口mindustry.world.blocks.power.*；
+进口mindustry.world.blocks.production.*；
+进口mindustry.world.blocks.sandbox.*；
+进口mindustry.world.blocks.storage.*；
+进口mindustry.world.blocks.units.*；
+进口mindustry.world.consumers.*；
+进口mindustry.world.draw.*；
+进口mindustry.world.meta.*；
 
-import static mindustry.Vars.*;
-import static mindustry.type.ItemStack.*;
+进口 静态的mindustry.Vars.*；
+进口静态的mindustry.type.ItemStack.*；
 
-public class Blocks{
-    public static Block
+公共 班级 块{
+公共 静态的 块
 
-    //environment
-    air, spawn, removeWall, removeOre, cliff, deepwater, water, taintedWater, deepTaintedWater, tar, slag, cryofluid, stone, craters, charr, sand, darksand, dirt, mud, ice, snow, darksandTaintedWater, space, empty,
-    dacite, rhyolite, rhyoliteCrater, roughRhyolite, regolith, yellowStone, redIce, redStone, denseRedStone,
-    arkyciteFloor, arkyicStone,
-    redmat, bluemat,
-    stoneWall, dirtWall, sporeWall, iceWall, daciteWall, sporePine, snowPine, pine, shrubs, whiteTree, whiteTreeDead, sporeCluster,
-    redweed, purbush, yellowCoral,
-    rhyoliteVent, carbonVent, arkyicVent, yellowStoneVent, redStoneVent, crystallineVent, stoneVent, basaltVent,
-    regolithWall, yellowStoneWall, rhyoliteWall, carbonWall, redIceWall, ferricStoneWall, beryllicStoneWall, arkyicWall, crystallineStoneWall, redStoneWall, redDiamondWall,
-    ferricStone, ferricCraters, carbonStone, beryllicStone, crystallineStone, crystalFloor, yellowStonePlates,
-    iceSnow, sandWater, darksandWater, duneWall, sandWall, moss, sporeMoss, shale, shaleWall, grass, salt,
-    coreZone,
-    //boulders
-    shaleBoulder, sandBoulder, daciteBoulder, boulder, snowBoulder, basaltBoulder, carbonBoulder, ferricBoulder, beryllicBoulder, yellowStoneBoulder,
-    arkyicBoulder, crystalCluster, vibrantCrystalCluster, crystalBlocks, crystalOrbs, crystallineBoulder, redIceBoulder, rhyoliteBoulder, redStoneBoulder,
-    metalFloor, metalFloorDamaged, metalFloor2, metalFloor3, metalFloor4, metalFloor5, basalt, magmarock, hotrock, snowWall, saltWall,
-    darkPanel1, darkPanel2, darkPanel3, darkPanel4, darkPanel5, darkPanel6, darkMetal,
-    pebbles, tendrils,
+    //环境
+空气，产卵，removeWall，removeOore,悬崖,深水,水,被污染的水,deepTainedWater,焦油,熔渣,低温流体,石头,火山口,查尔,沙子,暗沙,污垢,泥,冰,雪,暗沙污染水,空间,空的,
+英安岩,流纹岩,流纹岩陨石坑,粗糙流纹岩,表土,黄石公园,redice,雷德斯通,denseRedStone,
+长石地面,阿尔基克石,
+    redmat,蓝的,
+石墙,dirtWall,孢子壁,冰墙,英安石墙,孢子松,snowpine,松树,灌木,白树,whiteTreeDead,孢子簇,
+红草,紫草,黄珊瑚,
+    流纹岩通风口,carbonVent,arkyicVent,yellowStoneVent,redStoneVent,crystalVent,斯通文特,basaltVent,
+表土墙,yellowStoneWall,流纹岩墙,carbonWall,redIceWall,铁石墙,绿宝石石墙,阿尔基克墙,crystalStone墙,redStoneWall,redDiamondWall,
+铁石,铁陨石坑,炭石,绿柱石,crystalStone,crystalFloor,yellowStonePlates,
+伊切斯瑙,沙水,暗沙水,沙丘墙,沙墙,苔藓,孢子苔,页岩,页岩墙,草,盐,
+核心区,
+    //巨石
+页岩巨砾,砂卵石,英安岩巨砾,巨砾,斯诺博尔德,玄武岩漂砾,碳砾,铁卵石,绿宝石,黄石巨石,
+玢岩卵石,crystalCluster,variiblyCrystalCluster,crystalBlocks,crystalOrbs,水晶巨砾,redIceBoulder,流纹岩漂砾,redStoneBoulder,
+    metalFloor,metalFloorDamaged,metalFloor2,metalFloor3,metalFloor4,metalFloor5,玄武岩,岩浆岩,Hotrock,雪墙,SaltWall,
+    darkPanel1,darkPanel2,darkPanel3,darkPanel4,darkPanel5,darkPanel6,暗金属,
+    卵石,卷须,
 
-    //ores
+    //矿石
     oreCopper, oreLead, oreScrap, oreCoal, oreTitanium, oreThorium,
     oreBeryllium, oreTungsten, oreCrystalThorium, wallOreThorium,
 
@@ -2392,71 +2392,71 @@ public class Blocks{
             new DrawRegion("-turbine"){{
                 rotateSpeed = 2f;
             }},
-            new DrawRegion("-turbine"){{
-                rotateSpeed = -2f;
-                rotation = 45f;
+            新的 DrawRegion("-涡轮"){{
+rotateSpeed=-2F;
+旋转=45F;
             }},
-            new DrawRegion("-cap"),
-            new DrawLiquidRegion()
+            新的 DrawRegion("-cap"),
+            新的 DrawLiquidRegion()
             );
         }};
 
-        differentialGenerator = new ConsumeGenerator("differential-generator"){{
-            requirements(Category.power, with(Items.copper, 70, Items.titanium, 50, Items.lead, 100, Items.silicon, 65, Items.metaglass, 50));
-            powerProduction = 18f;
-            itemDuration = 220f;
-            hasLiquids = true;
-            hasItems = true;
-            size = 3;
-            ambientSound = Sounds.steam;
-            generateEffect = Fx.generatespark;
-            ambientSoundVolume = 0.03f;
+差速器发电机=新的 ConsumeGenerator("差动发电机"){{
+            要求(类别.电源，和……一起(项目.铜,70，Items.titanium，50，Items.Lead，100，项目，硅，65，Items.Metaglass，50));
+发电量=18F;
+itemDuration=220F;
+hasLiquids=正确;
+hasItems=正确;
+size=3;
+ambientSound=Sounds.steam；
+generateEffect=Fx.generatespark；
+ambientSoundVolume=0.03f;
 
-            drawer = new DrawMulti(new DrawDefault(), new DrawWarmupRegion(), new DrawLiquidRegion());
+抽屉=新的 DrawMulti(新的 DrawDefault(),新的 DrawWarmupRegion(),新的 DrawLiquidRegion());
 
-            consumeItem(Items.pyratite);
-            consumeLiquid(Liquids.cryofluid, 0.1f);
+            consumeItem(项目.硫磷铁矿);
+            消费液体(液体。冷冻液，0.1f);
         }};
 
-        rtgGenerator = new ConsumeGenerator("rtg-generator"){{
-            requirements(Category.power, with(Items.lead, 100, Items.silicon, 75, Items.phaseFabric, 25, Items.plastanium, 75, Items.thorium, 50));
-            size = 2;
-            powerProduction = 4.5f;
-            itemDuration = 60 * 14f;
-            envEnabled = Env.any;
-            generateEffect = Fx.generatespark;
+rtgGenerator=新的 ConsumeGenerator("rtg-generator"){{
+            要求(类别.电源，和……一起(项目.领导,100，项目，硅，75，项目.phaseFabric，25，项目.plastanium，75，项目，钍，50));
+size=2;
+发电量=4.5f;
+itemDuration=60*14F;
+envEnabled=Env.any；
+generateEffect=Fx.generatespark；
 
-            itemDurationMultipliers.put(Items.phaseFabric, 210f / 14f);
-            drawer = new DrawMulti(new DrawDefault(), new DrawWarmupRegion());
-            consume(new ConsumeItemRadioactive());
+itemDurationMultipliers。放(items.phaseFabric，210F/14F);
+抽屉=新的 DrawMulti(新的 DrawDefault(),新的 DrawWarmupRegion());
+            消费(新的 ConsumeItemRadioactive());
         }};
 
-        solarPanel = new SolarGenerator("solar-panel"){{
-            requirements(Category.power, with(Items.lead, 10, Items.silicon, 8));
-            powerProduction = 0.12f;
+SolarPanel=新的 SolarGenerator("太阳能面板"){{
+            要求(类别.电源，和……一起(项目.领导,10，项目，硅，8));
+发电量=0.12F;
         }};
 
-        largeSolarPanel = new SolarGenerator("solar-panel-large"){{
-            requirements(Category.power, with(Items.lead, 60, Items.silicon, 70, Items.phaseFabric, 15));
-            size = 3;
-            powerProduction = 1.6f;
+largeSolarPanel=新的 SolarGenerator("太阳能板大"){{
+            要求(类别.电源，和……一起(项目.领导,60，项目，硅，70，项目.phaseFabric，15));
+大小=3;
+发电量=1.6F;
         }};
 
-        thoriumReactor = new NuclearReactor("thorium-reactor"){{
-            requirements(Category.power, with(Items.lead, 300, Items.silicon, 200, Items.graphite, 150, Items.thorium, 150, Items.metaglass, 50));
-            ambientSound = Sounds.hum;
-            ambientSoundVolume = 0.24f;
-            size = 3;
-            health = 700;
-            itemDuration = 360f;
-            powerProduction = 15f;
-            heating = 0.02f;
+钍反应器=新的 核反应器("钍反应堆"){{
+            要求(类别.电源，和……一起(项目.领导,300，项目，硅，200，项目.石墨，150，项目，钍，150，Items.Metaglass，50));
+ambientSound=Sounds.hum；
+ambientSoundVolume=0.24f;
+大小=3;
+健康=700;
+itemDuration=360F;
+发电量=15F;
+加热=0.02f;
 
-            consumeItem(Items.thorium);
-            consumeLiquid(Liquids.cryofluid, heating / coolantPower).update(false);
+            consumeItem(项目.钍);
+            消费液体(液体、冷冻液、加热/冷却液功率).更新(假的);
         }};
 
-        impactReactor = new ImpactReactor("impact-reactor"){{
+impactReactor=新的 ImpactReactor("冲击反应器"){{
             requirements(Category.power, with(Items.lead, 500, Items.silicon, 300, Items.graphite, 400, Items.thorium, 100, Items.surgeAlloy, 250, Items.metaglass, 250));
             size = 4;
             health = 900;
@@ -4697,96 +4697,96 @@ public class Blocks{
 
                 lifetime = 34f;
                 rotationOffset = 90f;
-                trailLength = 7;
-                //for chasing targets
-                extraRangeMargin = 32f;
+trailLength=7;
+                //用于追逐目标
+extraRangeMargin=32F;
 
-                hitEffect = despawnEffect = Fx.hitBulletColor;
+hitEffect=descawnEffect=Fx.hitBulletColor；
             }},
 
-            Items.surgeAlloy, new BasicBulletType(){{
-                reloadMultiplier = 0.75f;
-                damage = 65;
-                rangeChange = 8f * 3f;
-                lightning = 3;
-                lightningLength = 4;
-                lightningDamage = 18f;
-                lightningLengthRand = 3;
-                speed = 6f;
-                width = height = 16;
-                shrinkY = 0.3f;
-                backSprite = "large-bomb-back";
-                sprite = "mine-bullet";
-                velocityRnd = 0.11f;
-                collidesGround = false;
-                collidesTiles = false;
-                shootEffect = Fx.shootBig2;
-                smokeEffect = Fx.shootSmokeDisperse;
-                frontColor = Color.white;
-                backColor = trailColor = hitColor = Pal.surge;
-                trailChance = 0.44f;
-                ammoMultiplier = 3f;
+项目.Surge合金，新的 BasicBulletType(){{
+reloadMultiplier=0.75f;
+损坏=65;
+rangeChange=8F*3F;
+闪电=3;
+lightningLength=4;
+闪电损坏=18F;
+lightningLengthRand=3;
+速度=6F;
+宽度=高度=16;
+收缩=0.3F;
+backSprite="大弹背";
+精灵="地雷弹";
+velocityRnd=0.11f;
+CollidesGround=假的;
+CollidesTiles=假的;
+shootEffect=Fx.shootBig2；
+烟雾效果=Fx.shootSmokeDisperse；
+frontColor=Color.White；
+背景色=trailColor=hitColor=Pal.surge；
+trailChance=0.44f;
+ammoMultiplier=3F;
 
-                lifetime = 34f;
-                rotationOffset = 90f;
-                trailRotation = true;
-                trailEffect = Fx.disperseTrail;
+寿命=34F;
+rotationOffset=90F;
+trailRotation=正确;
+trailEffect=Fx.disperseTrail；
 
-                hitEffect = despawnEffect = Fx.hitBulletColor;
+hitEffect=descawnEffect=Fx.hitBulletColor；
 
-                bulletInterval = 4f;
+bulletInterval=4F;
 
-                intervalBullet = new BulletType(){{
-                    collidesGround = false;
-                    collidesTiles = false;
-                    lightningLengthRand = 4;
-                    lightningLength = 2;
-                    lightningCone = 30f;
-                    lightningDamage = 20f;
-                    lightning = 1;
-                    hittable = collides = false;
-                    instantDisappear = true;
-                    hitEffect = despawnEffect = Fx.none;
+intervalBullet=新的 BulletType(){{
+CollidesGround=假的;
+CollidesTiles=假的;
+lightningLengthRand=4;
+lightningLength=2;
+闪电锥=30F;
+闪电损坏=20F;
+闪电=1;
+hittable=碰撞=假的;
+instantDisAppear=正确;
+hitEffect=descawnEffect=Fx.none；
                 }};
             }}
             );
 
-            reload = 9f;
-            shootY = 15f;
-            rotateSpeed = 5f;
-            shootCone = 30f;
-            consumeAmmoOnce = true;
-            shootSound = Sounds.shootBig;
+重新加载=9F;
+shooty=15F;
+rotateSpeed=5F;
+shootCone=30F;
+concuseAmmoOnce=正确;
+ShootSound=Sounds.shootBig；
 
-            drawer = new DrawTurret("reinforced-"){{
-                parts.add(new RegionPart("-side"){{
-                    mirror = true;
-                    under = true;
-                    moveX = 1.75f;
-                    moveY = -0.5f;
+抽屉=新的 DrawTurret("加强-"){{
+部分。添加(新的 RegionPart("-side"){{
+镜像=正确;
+低于=正确;
+Movex=1.75f;
+movey=-0.5F;
                 }},
-                new RegionPart("-mid"){{
-                    under = true;
-                    moveY = -1.5f;
-                    progress = PartProgress.recoil;
-                    heatProgress = PartProgress.recoil.add(0.25f).min(PartProgress.warmup);
-                    heatColor = Color.sky.cpy().a(0.9f);
+                新的 RegionPart("-mid"){{
+低于=正确;
+movey=-1.5F;
+progress=PartProgress.recoil；
+heatProgress=PartProgress.recoil。添加(0.25f).最小值(PartProgress.warmup);
+heatColor=Color.sky。CPY().一个(0.9F);
                 }},
-                new RegionPart("-blade"){{
-                    heatProgress = PartProgress.warmup;
-                    heatColor = Color.sky.cpy().a(0.9f);
-                    mirror = true;
-                    under = true;
-                    moveY = 1f;
-                    moveX = 1.5f;
-                    moveRot = 8;
+                新的 RegionPart("-刀片"){{
+heatProgress=PartProgress.warmup；
+heatColor=Color.sky。CPY().一个(0.9F);
+镜像=正确;
+低于=正确;
+movey=1F;
+Movex=1.5F;
+moveRot=8;
                 }});
             }};
 
-            shoot = new ShootAlternate(){{
-                spread = 4.7f;
-                shots = 4;
-                barrels = 4;
+射击=新的 ShootAlternate(){{
+扩散=4.7F;
+镜头=4;
+桶数=4;
             }};
 
             targetGround = false;
@@ -6552,8 +6552,8 @@ public class Blocks{
             itemCapacity = 100;
 
             coolingEffect = new RadialEffect(Fx.steamCoolSmoke, 4, 90f, 9.5f, 180f);
-            liquidCapacity = 3000f;
-            consumeLiquidAmount = 1500f;
+液体容量=2000F；
+            consumeLiquidAmount = 1000f;
         }};
 
         interplanetaryAccelerator = new Accelerator("interplanetary-accelerator"){{
